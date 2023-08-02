@@ -7,7 +7,7 @@
 	<packaging>war</packaging>
 	<version>1.0</version>
 	
-	<name>Java Web Application</name>
+	<name>Java Web Application Pipeline</name>
 	<url>http://mithuntechnologies.com</url>
 	
 	<description>Maven Web Project</description>
