@@ -105,12 +105,12 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>JavaWebApplicationRelease</name>
-	      <url>http://172.31.11.253:8081/repository/Java-Web-application-Release/</url>
+	      <url>http://172.31.8.227:8081/repository/Java-Web-ApplicationRelease/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>JavaWebApplicationSnapshot</name>
-	      <url>http://172.31.11.253:8081/repository/Java-web-Application-Snapshot/</url>
+	      <url>http://172.31.8.227:8081/repository/Java-Web-ApplicationSnapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement> 
 	
