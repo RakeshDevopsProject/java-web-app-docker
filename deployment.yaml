@@ -14,10 +14,6 @@ spec:
       containers:
       - name: java-app
         image: 172.31.2.88:8083/javawebapp:${Version}
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 8084
 ---
