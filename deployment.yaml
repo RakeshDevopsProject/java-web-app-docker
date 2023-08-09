@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javawebappDep
+spec:
+  selector:
+    matchLabels:
+      app: javaApp
+  template:
+    metadata:
+      labels:
+        app: javaApp
+    spec:
+      containers:
+      - name: javaApp
+        image: 172.31.2.88:8083/javawebapp:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8084
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: javasvc
+spec:
+  type: NodePort
+  selector:
+    app: javaApp
+  ports:
+  - port: 80
+    targetPort: 8084
