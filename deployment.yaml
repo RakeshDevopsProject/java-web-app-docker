@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: java-app
-        image: 172.31.2.88:8083/javawebapp:${VERSION_PLACEHOLDER}
+        image: 172.31.2.88:8083/javawebapp:${Version}
         ports:
         - containerPort: 8084
 ---
