@@ -27,7 +27,7 @@ pipeline{
         stage("Login into dockerhub & Push Docker image to dockerhub"){
             steps{
                 script{
-                    docker.withRegistry('',Docker_Cred)
+                    docker.withRegistry('https://hub.docker.com/repository/docker/gundurakesh/',Docker_Cred)
                     docker_image.push()
                 }
             }
