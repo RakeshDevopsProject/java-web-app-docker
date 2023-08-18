@@ -40,9 +40,9 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To Mithun Technologies, Marathahalli, Bengaluru, Inida ,Karnataka.</h2>
-                        <h2>DevOps Freestyle projects</h2>
-			<h3>Contact @ +91-9980923226,+91-9980923216</h3>
+			<h2>Welcome To Rakesh DevOps Projects</h2>
+                        <h2>Java Web Application Declarative Pipeline </h2>
+			<h3>Contact @ +91-7013259522</h3>
 		</div>	
 	</div>
 
