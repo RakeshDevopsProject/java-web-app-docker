@@ -28,8 +28,16 @@ pipeline{
             steps{
                 script{
                     docker.withRegistry('',Docker_Cred){
-                         docker_image.push()
-                    }  
+                       docker_image.push()
+                    }
+                    
+                }
+            }
+        }
+        stage("Deploy into Kubernetes Cluster"){
+            steps{
+                script{
+                    sh "kubectl set image deployment my-app-deployment my-app-container=gundurakesh/javawebapp:${Version}"
                 }
             }
         }
