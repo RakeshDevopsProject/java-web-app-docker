@@ -4,6 +4,10 @@ pipeline{
     }
     environment{
         Version = "${env.BUILD_NUMBER}"
+        Docker_Username = "gundurakesh"
+        ApplicationName = "javawebapp"
+        ImageName = "${Docker_Username}" + "/" + "${ApplicationName}"
+        Docker_Cred = "dockerpwd"
     }
     agent any
     stages{
@@ -15,11 +19,13 @@ pipeline{
         stage("Build Docker image"){
             steps{
                 script{
-                      sh "docker build -t gundurakesh/javawebapp:${Version} ."
+                      docker_image = docker.build ("${ImageName}:${Version}", "." )
                 } 
                 
             }
         }
         
-    }//stages closing   
-}//pipeline closing
+
+        
+    }
+}
