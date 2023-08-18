@@ -37,7 +37,6 @@ pipeline{
         stage("Deploy into Kubernetes Cluster"){
             steps{
                 script{
-                    sh "docker pull gundurakesh/javawebapp:${Version}"
                     sh "kubectl set image deployment/my-app-deployment my-app-container=gundurakesh/javawebapp:11"
                 }
             }
